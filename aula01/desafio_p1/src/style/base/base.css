@@ -101,3 +101,20 @@
 .input__field:focus+.input__label+.input__highlight {
   width: 100%;
 }
+
+.input__container a {
+  text-decoration: none;
+  color: var(--grey-color);
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-size: 1rem;
+
+  &:hover {
+    color: var(--white-text);
+  }
+}
+
+.buttons__container {
+  display: flex;
+  flex-direction: column;
+}

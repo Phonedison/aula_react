@@ -33,8 +33,8 @@ export const App = () => {
             tipo={"password"}
           />
           <div className="buttons__container">
-            <button className="btn-next"></button>
-            <button></button>
+            <input type="button" value="Login" />
+            <input type="button" value="Voltar" />
           </div>
         </form>
       </section>

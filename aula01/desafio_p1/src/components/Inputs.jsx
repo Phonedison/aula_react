@@ -3,14 +3,15 @@ export const Inputs = ({ label_name, label_valor, tipo }) => {
     <div className="input__container">
       <input
         className="input__field"
-        name={label_name}
+        id={label_name}
         type={tipo}
-        required=""
+        placeholder=" "
       />
       <label className="input__label" htmlFor={label_name}>
         {label_valor}
       </label>
-      <span className="input__highlight"></span>
+      <div className="input__highlight"></div>
+      {tipo === "password" && <a href="#">Esqueceu a senha?</a>}
     </div>
   );
 };
