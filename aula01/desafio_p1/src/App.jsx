@@ -1,3 +1,4 @@
+import { Buttons } from "./components/Buttons";
 import { Footer } from "./components/Footer";
 import { Inputs } from "./components/inputs";
 import "./style/main.css";
@@ -33,8 +34,8 @@ export const App = () => {
             tipo={"password"}
           />
           <div className="buttons__container">
-            <input type="button" value="Login" />
-            <input type="button" value="Voltar" />
+            <Buttons style={"button-login"} value={"Login"} />
+            <Buttons style={"button-cancel"} value={"Voltar"} />
           </div>
         </form>
       </section>

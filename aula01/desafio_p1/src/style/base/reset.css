@@ -25,7 +25,6 @@ main {
   align-items: center;
   flex-direction: column;
   margin: auto;
-  padding: 0 16rem;
   justify-content: space-between;
 
 }
@@ -66,8 +65,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2.4rem;
-  padding: 2.4rem 16rem;
-
+  padding: 2.4rem 24rem;
 }
 
 ul {
@@ -109,4 +107,8 @@ footer span {
 
 footer span:hover {
   color: var(--white-text);
+}
+
+input[type="button"] {
+  cursor: pointer;
 }

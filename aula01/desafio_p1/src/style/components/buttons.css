@@ -1,0 +1,42 @@
+.buttons__container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: .8rem;
+  align-items: center;
+}
+
+.buttons__container input[type="button"] {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+
+  width: 100%;
+  max-width: 40rem;
+  height: 100%;
+
+  padding: 1rem .4rem;
+  border-radius: 32rem;
+
+  transition: border-color ease-in-out .2s, background-color ease-in-out .2s, color ease-in-out .3s;
+}
+
+.button-login {
+  background-color: transparent;
+  border: solid .1rem var(--grey-color);
+  color: var(--grey-color);
+}
+
+.button-login:hover {
+
+  background-color: var(--primary-color);
+  border: solid .1rem var(--primary-color);
+  color: var(--background-body);
+}
+
+
+.button-cancel {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+}

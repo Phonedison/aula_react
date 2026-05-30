@@ -1,0 +1,79 @@
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.input__container {
+  position: relative;
+  margin: .8rem 2rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.input__field {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 0.2rem solid var(--grey-color);
+  outline: none;
+  color: var(--white-text);
+  background-color: transparent;
+
+  transition: all ease-in-out .5s;
+}
+
+.input__label {
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  font-size: 1.6rem;
+  color: var(--white-text);
+  pointer-events: none;
+  transition: all ease-in-out .2s;
+  transform-origin: left top;
+}
+
+.input__highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.2rem;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.input__field:focus+.input__label,
+.input__field:not(:placeholder-shown)+.input__label {
+  top: -1.2rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.input__field:focus~.input__highlight {
+  width: 100%;
+}
+
+.input__forgot-password {
+  margin-top: -1rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.input__wrapper .input__forgot-password a {
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--grey-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.input__wrapper .input__forgot-password a:hover {
+  color: var(--white-text);
+}
