@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato";
+  line-height: 1.6;
+}
+
+body {
+  color: beige;
+  background-color: #0e0e0e;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-between;
+
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+svg {
+  width: 100%;
+  fill: #ff640a;
+}
+
+
+section {
+  width: 100%;
+  max-width: 72rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2.4rem;
+  padding: .8rem;
+  border-bottom: solid .1rem gray;
+}
+
+li {
+  padding: .4rem;
+}
+
+li::after {
+  content: "|";
+}
+
+li:last-child::after {
+  content: "";
+}
+
+li>span {
+  padding-right: 2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
