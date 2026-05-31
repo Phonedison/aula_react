@@ -1,4 +1,4 @@
-export const Inputs = ({ label_name, label_valor, tipo }) => {
+export const Inputs = ({ label_name, label_valor, tipo, metodo }) => {
   return (
     <>
       <div className="input__wrapper">
@@ -8,6 +8,7 @@ export const Inputs = ({ label_name, label_valor, tipo }) => {
             id={label_name}
             type={tipo}
             placeholder=" "
+            onChange={metodo}
           />
           <label className="input__label" htmlFor={label_name}>
             {label_valor}
