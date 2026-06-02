@@ -1,0 +1,15 @@
+.enemy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 3px;
+
+  width: 100vw;
+  border: 1px solid;
+  border-color: black;
+}
+
+.villainContainer {
+  flex: 1;
+}

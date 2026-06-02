@@ -1,20 +1,26 @@
+import style from "./style.module.css";
+
 export const Footer = () => {
   return (
     <>
-      <footer className="footer">
-        <ul className="footer__links-list">
-          <li>
-            <span>Termos de Uso</span>
+      <footer className={style.footer}>
+        <ul className={style.footer__list}>
+          <li className={style.footer__list_item}>
+            <span className={style.footer__list_item_span}>Termos de Uso</span>
           </li>
-          <li>
-            <span>Política de Privacidade</span>
+          <li className={style.footer__list_item}>
+            <span className={style.footer__list_item_span}>
+              Política de Privacidade
+            </span>
           </li>
-          <li>
-            <span>Ferramenta de Consentimento de Cookies</span>
+          <li className={style.footer__list_item}>
+            <span className={style.footer__list_item_span}>
+              Ferramenta de Consentimento de Cookies
+            </span>
           </li>
         </ul>
-        <div className="footer__copyright">
-          <div className="footer__logotipo">
+        <div className={style.footer__copyright}>
+          <div className={style.footer__logotipo}>
             <div>
               <svg
                 width="158"

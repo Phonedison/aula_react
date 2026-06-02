@@ -19,9 +19,9 @@
   padding: 0.8rem;
   font-size: 1.6rem;
   border: none;
-  border-bottom: 0.2rem solid var(--grey-color);
+  border-bottom: 0.2rem solid #b1b1b1;
   outline: none;
-  color: var(--white-text);
+  color: #fff;
   background-color: transparent;
 
   transition: all ease-in-out .5s;
@@ -32,7 +32,7 @@
   top: 0.8rem;
   left: 0;
   font-size: 1.6rem;
-  color: var(--white-text);
+  color: #fff;
   pointer-events: none;
   transition: all ease-in-out .2s;
   transform-origin: left top;
@@ -44,7 +44,7 @@
   left: 0;
   height: 0.2rem;
   width: 0;
-  background-color: var(--primary-color);
+  background-color: #ff640a;
   transition: width 0.3s ease;
 }
 
@@ -52,28 +52,28 @@
 .input__field:not(:placeholder-shown)+.input__label {
   top: -1.2rem;
   font-size: 1.2rem;
-  color: var(--primary-color);
+  color: #ff640a;
 }
 
 .input__field:focus~.input__highlight {
   width: 100%;
 }
 
-.input__forgot-password {
+.input__forgot_password {
   margin-top: -1rem;
   width: 100%;
   max-width: 40rem;
 }
 
-.input__wrapper .input__forgot-password a {
+.input__wrapper .input__forgot_password a {
   font-weight: 900;
   text-decoration: none;
-  color: var(--grey-color);
+  color: #b1b1b1;
   text-transform: uppercase;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
 
-.input__wrapper .input__forgot-password a:hover {
-  color: var(--white-text);
+.input__wrapper .input__forgot_password a:hover {
+  color: #fff;
 }

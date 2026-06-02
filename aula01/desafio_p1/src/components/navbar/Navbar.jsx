@@ -1,8 +1,10 @@
+import style from "./style.module.css";
+
 export const Navbar = () => (
-  <nav className="navbar">
-    <div className="navbar__logotipo">
+  <nav className={style.navbar}>
+    <div className={style.navbar__logotipo}>
       <svg
-        className="crunchyroll-logo__icon--slQyX"
+        className={style.navbar__svg}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 303 52"
         data-t="crunchyroll-horizontal-svg"
