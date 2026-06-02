@@ -6,8 +6,9 @@
   align-items: center;
 }
 
-.buttons__container input[type="button"] {
-  cursor: pointer;
+.buttons__container input[type="button"],
+.buttons__container input[type="submit"] {
+
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -23,13 +24,14 @@
 }
 
 .button__login {
+  cursor: pointer;
   background-color: transparent;
   border: solid .1rem #b1b1b1;
   color: #b1b1b1;
 }
 
 .button__login:hover {
-
+  cursor: pointer;
   background-color: #ff640a;
   border: solid .1rem #ff640a;
   color: #fff;
@@ -39,11 +41,12 @@
   background-color: transparent;
   border: solid .1rem #b1b1b1;
   color: #b1b1b1;
-  cursor: not-allowed;
   opacity: .5;
+  cursor: not-allowed;
 }
 
 .button__cancel {
+  cursor: pointer;
   background-color: transparent;
   border: none;
   color: #ff640a;

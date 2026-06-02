@@ -1,9 +1,15 @@
-import style from "./style.module.css";
-const Button = ({ style, value, disabled = false, onClick }) => {
+import estilo from "./style.module.css";
+const Button = ({
+  className,
+  value,
+  disabled = false,
+  onClick,
+  type = "button",
+}) => {
   return (
     <input
-      className={style}
-      type="button"
+      className={className}
+      type={type}
       value={value}
       disabled={disabled}
       onClick={onClick}
@@ -11,18 +17,18 @@ const Button = ({ style, value, disabled = false, onClick }) => {
   );
 };
 
-export const ButtonsGroup = ({ campoEmail = true, resposta, contagem }) => {
+export const ButtonsGroup = ({ campoEmail = true, resposta }) => {
   return (
-    <div className={style.buttons__container}>
+    <div className={estilo.buttons__container}>
       <Button
-        style={style.button__login}
+        className={estilo.button__login}
+        type={"submit"}
         value={"Login"}
         disabled={campoEmail}
         resposta={resposta}
-        onClick={contagem}
       />
 
-      <Button style={style.button__cancel} value={"Voltar"} />
+      <Button className={estilo.button__cancel} value={"Voltar"} />
     </div>
   );
 };
