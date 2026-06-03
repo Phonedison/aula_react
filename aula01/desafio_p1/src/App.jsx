@@ -49,6 +49,7 @@ export const App = () => {
     event.preventDefault();
     setEnviado(true);
   };
+
   return (
     <>
       <Navbar />
