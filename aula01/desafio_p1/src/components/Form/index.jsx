@@ -1,5 +1,6 @@
 import { ButtonsGroup } from "../Button";
 import { Inputs } from "../Input";
+import style from "./style.module.css";
 export const Formulario = ({
   dispararValidacao,
   setEmail,
@@ -9,7 +10,7 @@ export const Formulario = ({
   validar,
 }) => {
   return (
-    <form onSubmit={dispararValidacao}>
+    <form className={style.container} onSubmit={dispararValidacao}>
       <h2>Login</h2>
 
       <Inputs
