@@ -1,8 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useState } from "react";
-import { ButtonsGroup } from "./components/button/Buttons";
 import { Footer } from "./components/footer/Footer";
-import { Inputs } from "./components/inputs/Inputs";
+import { Formulario } from "./components/Form";
 import { Navbar } from "./components/navbar/Navbar";
 
 export const App = () => {
@@ -55,27 +54,14 @@ export const App = () => {
       <Navbar />
 
       <section>
-        <form className="container" onSubmit={dispararValidacao}>
-          <h2>Login</h2>
-
-          <Inputs
-            label_name={"email"}
-            label_valor={"Digite sua email"}
-            tipo={"email"}
-            metodo={(emailInput) => setEmail(emailInput.target.value)}
-          />
-
-          {email && (
-            <Inputs
-              label_name={"senha"}
-              label_valor={"Digite sua senha"}
-              tipo={"password"}
-              metodo={(senhaInput) => setSenha(senhaInput.target.value)}
-            />
-          )}
-
-          <ButtonsGroup campoEmail={!validar} resposta={resposta} />
-        </form>
+        <Formulario
+          dispararValidacao={dispararValidacao}
+          setEmail={setEmail}
+          email={email}
+          setSenha={setSenha}
+          resposta={resposta}
+          validar={validar}
+        />
       </section>
 
       <Footer />
