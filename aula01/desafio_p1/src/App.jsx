@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useState } from "react";
-import { Footer } from "./components/footer/Footer";
+import { Footer } from "./components/Footer";
 import { Formulario } from "./components/Form";
-import { Navbar } from "./components/navbar/Navbar";
+import { Navbar } from "./components/Navbar";
 
 export const App = () => {
   const [senha, setSenha] = useState("");
