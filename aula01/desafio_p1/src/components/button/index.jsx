@@ -32,3 +32,40 @@ export const ButtonsGroup = ({ campoEmail = true, resposta }) => {
     </div>
   );
 };
+
+/* import { Button, Div } from "./styles";
+
+const Inputs = ({
+  value,
+  disabled = false,
+  onClick,
+  type = "button",
+  login = false,
+}) => {
+  return (
+    <Button
+      type={type}
+      value={value}
+      disabled={disabled}
+      onClick={onClick}
+      login={login}
+    />
+  );
+};
+
+export const ButtonsGroup = ({ campoEmail = true, resposta }) => {
+  return (
+    <Div>
+      <Inputs
+        type={"submit"}
+        value={"Login"}
+        disabled={campoEmail}
+        resposta={resposta}
+        login={true}
+      />
+
+      <Inputs value={"Voltar"} />
+    </Div>
+  );
+};
+ */

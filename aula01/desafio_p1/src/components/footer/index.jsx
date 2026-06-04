@@ -50,3 +50,41 @@ export const Footer = () => {
     </>
   );
 };
+
+/*
+
+export const Rodape = () => {
+  return (
+    <>
+      <Footer>
+        <List>
+          <Item>
+            <span>Termos de Uso</span>
+          </Item>
+          <Item>
+            <span>Política de Privacidade</span>
+          </Item>
+          <Item>
+            <span>Ferramenta de Consentimento de Cookies</span>
+          </Item>
+        </List>
+        <CopyRight>
+          <Logotipo>
+            <LogotipoSvg>
+              <title>Sony Pictures</title>
+              <SonyPicturesPath />
+            </LogotipoSvg>
+            <span>© Crunchyroll, LLC</span>
+          </Logotipo>
+          <Select name="" id="">
+            <option value="portugues">Português Br</option>
+            <option value="ingles">Ingles</option>
+            <option value="japones">Japonês</option>
+          </Select>
+        </CopyRight>
+      </Footer>
+    </>
+  );
+};
+
+*/
