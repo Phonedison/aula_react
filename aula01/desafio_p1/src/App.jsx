@@ -51,8 +51,8 @@ export const App = () => {
 
   return (
     <>
+      {/*   <GlobalStyle /> */}
       <Navbar />
-
       <section>
         <Formulario
           dispararValidacao={dispararValidacao}
