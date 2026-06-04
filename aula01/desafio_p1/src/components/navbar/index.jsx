@@ -16,3 +16,23 @@ export const Navbar = () => (
     </div>
   </nav>
 );
+
+/*
+
+const CrunchyrollSvg = () => {
+  return (
+    <LogotipoSvg>
+      <CrunchyrollPath />
+    </LogotipoSvg>
+  );
+};
+
+export const Navbar = () => (
+  <Header>
+    <Container>
+      <CrunchyrollSvg />
+    </Container>
+  </Header>
+);
+
+*/
