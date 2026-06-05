@@ -26,3 +26,24 @@ export const Inputs = ({ label_name, label_valor, tipo, metodo }) => {
     </>
   );
 };
+
+/*
+    <Div type="wrapper">
+        <Div type="container">
+          <Input
+            id={label_name}
+            type={tipo}
+            placeholder=" "
+            onChange={metodo}
+          />
+          <Label htmlFor={label_name}>{label_valor}</Label>
+          <Div type="highlight" />
+        </Div>
+        {tipo === "password" && (
+          <Div type="forgot">
+            <a href="#">Esqueceu a senha?</a>
+          </Div>
+        )}
+      </Div>
+
+*/
